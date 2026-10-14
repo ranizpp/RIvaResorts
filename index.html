@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riva Resorts Wayanad | Boutique cottages near Pookode Lake, Vythiri</title>
+<meta name="description" content="Riva Resorts is a boutique retreat in Vythiri, Wayanad, 1 km from Pookode Lake. Private cottages, deluxe and standard rooms with a pool, campfire nights, barbecue and complimentary breakfast.">
+<meta property="og:title" content="Riva Resorts Wayanad">
+<meta property="og:description" content="A peaceful boutique retreat 1 km from Pookode Lake, Vythiri, Wayanad.">
+<meta name="theme-color" content="#0E2419">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+@font-face{font-family:"Instrument Serif";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/serif.woff2) format("woff2")}
+@font-face{font-family:"Instrument Serif";font-style:italic;font-weight:400;font-display:swap;src:url(assets/fonts/serif-italic.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:200 800;font-display:swap;src:url(assets/fonts/manrope.woff2) format("woff2")}
+
+:root{
+  --forest:#173D2A;
+  --deep:#0E2419;
+  --mist:#ECF0EA;
+  --white:#FBFCFA;
+  --ink:#0F1B14;
+  --ink-2:#34463B;
+  --sage:#AFC4B4;
+  --lamp:#E0B15C;
+  --line:rgba(15,27,20,.14);
+  --serif:"Instrument Serif","Bodoni 72",Didot,Georgia,serif;
+  --sans:"Manrope","Segoe UI",system-ui,-apple-system,sans-serif;
+  --wrap:min(1320px,100% - 2.5rem);
+  --ease:cubic-bezier(.22,1,.36,1);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--sans);font-weight:450;font-size:1.0625rem;line-height:1.65;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit}
+:focus-visible{outline:2px solid var(--lamp);outline-offset:3px}
+.wrap{width:var(--wrap);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:.98;margin:0;letter-spacing:-.015em}
+h2{font-size:clamp(2.8rem,6.4vw,6rem)}
+h3{font-size:clamp(2rem,3.6vw,3.2rem)}
+p{margin:0 0 1em;max-width:60ch}
+.kicker{display:inline-flex;align-items:center;gap:.7rem;font-size:.95rem;font-weight:600;color:var(--forest);margin-bottom:1.4rem}
+.kicker svg{width:18px;height:18px;fill:currentColor}
+
+/* word mask reveal */
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.wi{display:inline-block}
+.js .split .wi{transform:translateY(110%)}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.7rem;font-weight:600;font-size:.98rem;padding:1.05rem 1.7rem;border-radius:999px;text-decoration:none;border:0;cursor:pointer;overflow:hidden;isolation:isolate;transition:color .5s var(--ease)}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;transform:translateY(101%);transition:transform .6s var(--ease)}
+.btn:hover::before{transform:none}
+.btn-lamp{background:var(--lamp);color:var(--deep)}
+.btn-lamp::before{background:#fff}
+.btn-forest{background:var(--forest);color:#fff}
+.btn-forest::before{background:var(--deep)}
+.btn-line{color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.7)}
+.btn-line::before{background:#fff}
+.btn-line:hover{color:var(--deep)}
+.btn-dark-line{color:var(--forest);box-shadow:inset 0 0 0 1.5px var(--forest)}
+.btn-dark-line::before{background:var(--forest)}
+.btn-dark-line:hover{color:#fff}
+.btn svg{width:20px;height:20px;fill:currentColor}
+
+/* grain */
+.grain{position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1s steps(4) infinite}
+@keyframes grain{25%{transform:translate(-3%,2%)}50%{transform:translate(2%,-3%)}75%{transform:translate(-1%,3%)}}
+
+/* ---------- Preloader ---------- */
+.loader{position:fixed;inset:0;z-index:100;background:var(--deep);color:#fff;display:none;place-items:center}
+.js .loader{display:grid}
+.loader .mark{display:flex;flex-direction:column;align-items:center}
+.loader .letters{font-family:var(--serif);font-size:clamp(4rem,12vw,9rem);letter-spacing:.14em;padding-left:.14em;line-height:1;display:flex;overflow:hidden}
+.loader .letters span{display:inline-block;transform:translateY(105%)}
+.loader .lsprig{width:clamp(48px,7vw,80px);height:clamp(48px,7vw,80px);fill:var(--lamp);margin-bottom:.6rem}
+.loader .lsprig path{transform-origin:50% 100%;transform:scale(0)}
+.loader small{margin-top:1rem;font-family:var(--serif);font-size:1.1rem;letter-spacing:.5em;padding-left:.5em;opacity:0}
+
+/* ---------- Brand ---------- */
+.brand{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;color:inherit;line-height:1}
+.brand .word{font-family:var(--serif);font-size:1.9rem;letter-spacing:.16em;padding-left:.16em}
+.brand .i{position:relative;display:inline-block}
+.brand .sprig{position:absolute;left:50%;bottom:76%;width:.8em;height:.8em;transform:translateX(-38%);fill:currentColor;overflow:visible}
+.brand small{font-size:.56rem;font-weight:600;letter-spacing:.5em;padding-left:.5em;margin-top:.3rem}
+
+/* ---------- Header ---------- */
+.header{position:fixed;top:0;left:0;right:0;z-index:60;padding-top:env(safe-area-inset-top,0px);color:#fff;transition:transform .6s var(--ease),background .4s,color .4s}
+.header .bar{display:flex;align-items:center;justify-content:space-between;height:84px;gap:1.5rem}
+.header.scrolled{background:rgba(251,252,250,.82);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);color:var(--forest);box-shadow:0 1px 0 var(--line)}
+.header.hide{transform:translateY(-100%)}
+.nav{display:flex;gap:2.2rem;font-size:.95rem;font-weight:500}
+.nav a{text-decoration:none;position:relative;overflow:hidden;display:inline-block;height:1.5em;line-height:1.5}
+.nav a span{display:block;transition:transform .5s var(--ease)}
+.nav a span+span{position:absolute;left:0;top:100%}
+.nav a:hover span{transform:translateY(-100%)}
+.head-cta{display:flex;align-items:center;gap:.8rem}
+.head-cta .btn{padding:.8rem 1.3rem;font-size:.92rem}
+.header:not(.scrolled) .head-cta .btn-forest{background:rgba(255,255,255,.14);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+.menu-btn{display:none;background:none;border:0;color:inherit;width:44px;height:44px;cursor:pointer;position:relative}
+.menu-btn i{position:absolute;left:10px;right:10px;height:1.5px;background:currentColor;transition:transform .5s var(--ease),top .5s var(--ease)}
+.menu-btn i:first-child{top:17px}.menu-btn i:last-child{top:26px}
+.menu-open .menu-btn i:first-child{top:21px;transform:rotate(45deg)}
+.menu-open .menu-btn i:last-child{top:21px;transform:rotate(-45deg)}
+.mobile-menu{position:fixed;inset:0;z-index:55;background:var(--deep);color:#fff;display:flex;flex-direction:column;justify-content:center;padding:6rem 1.6rem calc(2rem + env(safe-area-inset-bottom,0px));clip-path:circle(0% at calc(100% - 42px) 42px);transition:clip-path .9s var(--ease);visibility:hidden}
+.menu-open .mobile-menu{clip-path:circle(150% at calc(100% - 42px) 42px);visibility:visible}
+.mobile-menu a{font-family:var(--serif);font-size:clamp(2.6rem,11vw,3.6rem);text-decoration:none;line-height:1.2}
+.mobile-menu .mm-foot{margin-top:2.5rem;font-size:1rem;color:var(--sage)}
+.menu-open .header{color:#fff;background:transparent;box-shadow:none;backdrop-filter:none}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;height:100svh;min-height:640px;color:#fff;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;justify-content:flex-end}
+.hero-media{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.hero-media img{width:100%;height:115%;object-fit:cover;object-position:center 60%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,18,12,.6) 0%,rgba(6,18,12,0) 28%,rgba(6,18,12,.1) 50%,rgba(6,18,12,.82) 100%)}
+.hero-copy{display:grid;grid-template-columns:1fr minmax(240px,320px);align-items:end;gap:2rem}
+.hero h1{font-size:clamp(3.4rem,7.6vw,7.6rem);line-height:.9;letter-spacing:-.025em}
+.hero h1 em{font-style:italic}
+.hero-sub{font-size:clamp(1rem,1.3vw,1.15rem);max-width:34ch;color:rgba(255,255,255,.92);margin:0 0 .6rem}
+.booking-bar{margin:2.6rem 0 clamp(1.5rem,4vh,2.5rem);display:grid;grid-template-columns:1fr 1fr 1fr 1fr auto;align-items:stretch;background:rgba(255,255,255,.12);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);border:1px solid rgba(255,255,255,.28);border-radius:22px;padding:.5rem;gap:.25rem}
+.bb-field{display:flex;flex-direction:column;justify-content:center;padding:.55rem 1.1rem;border-radius:16px;transition:background .3s}
+.bb-field:hover,.bb-field:focus-within{background:rgba(255,255,255,.12)}
+.bb-field label{font-size:.78rem;font-weight:600;color:rgba(255,255,255,.75)}
+.bb-field input,.bb-field select{background:transparent;border:0;color:#fff;font:600 1rem var(--sans);padding:.15rem 0;outline:none;width:100%;color-scheme:dark;appearance:none;-webkit-appearance:none}
+.bb-field select option{color:var(--ink)}
+.booking-bar .btn{border-radius:16px;padding-inline:2rem}
+.bb-err{grid-column:1/-1;color:#FFD9A0;font-size:.9rem;padding:0 1.1rem;margin:0;display:none}
+.bb-err.on{display:block}
+.scroll-cue{position:absolute;right:max(1.25rem,(100% - 1320px)/2);top:22%;writing-mode:vertical-rl;font-size:.82rem;font-weight:600;letter-spacing:.2em;display:flex;align-items:center;gap:1rem;color:rgba(255,255,255,.8)}
+.scroll-cue i{display:block;width:1px;height:70px;background:rgba(255,255,255,.3);position:relative;overflow:hidden}
+.scroll-cue i::after{content:"";position:absolute;left:0;top:-40%;width:100%;height:40%;background:#fff;animation:cue 2.2s var(--ease) infinite}
+@keyframes cue{to{top:100%}}
+
+/* ---------- Marquee ---------- */
+.marquee{background:var(--forest);color:var(--mist);overflow:hidden;padding:1.6rem 0;border-block:1px solid rgba(255,255,255,.08)}
+.marquee-track{display:flex;width:max-content;gap:0;will-change:transform}
+.marquee-group{display:flex;align-items:center;gap:2.6rem;padding-right:2.6rem;font-family:var(--serif);font-size:clamp(1.8rem,3.4vw,3rem);white-space:nowrap}
+.marquee-group svg{width:.75em;height:.75em;fill:var(--lamp);flex:none}
+.no-js-marquee .marquee-track{animation:mq 40s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---------- Intro ---------- */
+.intro{padding:clamp(6rem,13vw,11rem) 0 clamp(4rem,8vw,6rem);background:var(--white)}
+.intro-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(3rem,6vw,6.5rem);align-items:center}
+.intro-visual{position:relative;padding:0 0 14% 0}
+.intro-visual .main{border-radius:999px 999px 28px 28px;overflow:hidden;aspect-ratio:1/1.05;box-shadow:0 40px 80px -30px rgba(14,36,25,.45)}
+.intro-visual .main img{width:100%;height:118%;object-fit:cover;object-position:50% 50%}
+.intro-visual .float{position:absolute;left:-8%;bottom:0;width:52%;border-radius:22px;overflow:hidden;border:6px solid var(--white);box-shadow:0 30px 60px -20px rgba(14,36,25,.5);aspect-ratio:4/3}
+.intro-visual .float img{width:100%;height:100%;object-fit:cover}
+.intro-visual .badge{position:absolute;right:-1.2rem;top:12%;width:118px;height:118px;border-radius:50%;background:var(--lamp);color:var(--deep);display:grid;place-items:center;text-align:center;font-weight:700;font-size:.82rem;line-height:1.25;box-shadow:0 20px 40px -12px rgba(0,0,0,.35)}
+.intro-visual .badge b{display:block;font-family:var(--serif);font-weight:400;font-size:2.1rem;line-height:1}
+.intro-text{font-family:var(--serif);font-size:clamp(2rem,3.4vw,3.5rem);line-height:1.12;letter-spacing:-.01em;max-width:22ch;margin:0}
+.intro-text .word{opacity:1}
+.js .intro-text .word{opacity:.16}
+.intro-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:clamp(3rem,6vw,5rem);border-top:1px solid var(--line);padding-top:1.8rem}
+.intro-meta div{font-size:.95rem;color:var(--ink-2)}
+.intro-meta b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,3vw,2.6rem);color:var(--forest);line-height:1.1;margin-bottom:.2rem}
+.grow{padding:0 0 clamp(5rem,10vw,8rem);background:var(--white)}
+.grow-frame{height:min(88vh,820px);overflow:hidden;border-radius:0;will-change:clip-path}
+.grow-frame img{width:100%;height:120%;object-fit:cover}
+.js .grow-frame{clip-path:inset(12% 22% 12% 22% round 400px 400px 24px 24px)}
+
+/* ---------- Stays (stacking cards) ---------- */
+.stays{background:var(--mist);padding:clamp(6rem,11vw,9rem) 0 clamp(4rem,8vw,6rem)}
+.stays-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:clamp(3rem,6vw,4.5rem)}
+.stays-head p{max-width:36ch;color:var(--ink-2);margin:0}
+.cards{position:relative}
+.card{position:sticky;top:calc(100px + env(safe-area-inset-top,0px));display:grid;grid-template-columns:1.15fr 1fr;height:min(calc(100svh - 130px),680px);min-height:520px;background:var(--forest);color:#fff;border-radius:28px;overflow:hidden;margin-bottom:2.5rem;transform-origin:50% 0;box-shadow:0 -20px 50px rgba(14,36,25,.18)}
+.card:nth-child(2){background:#1D4632}.card:nth-child(3){background:#21503A}.card:nth-child(4){background:#2A5C44}
+.card-media{position:relative;overflow:hidden}
+.card-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.card:hover .card-media img.main{transform:scale(1.05)}
+.card-media img.inset{position:absolute;inset:auto 1.4rem 1.4rem auto;width:38%;height:auto;aspect-ratio:4/3;border-radius:14px;border:4px solid rgba(255,255,255,.9);box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.card-body{padding:clamp(2rem,4.5vw,4rem);display:flex;flex-direction:column;justify-content:space-between;gap:2rem}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.92rem;font-weight:600;color:var(--sage)}
+.card-top .pill{border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:.4rem .9rem;color:#fff}
+.card h3{font-size:clamp(2.4rem,4.4vw,4.4rem);margin-bottom:1.2rem}
+.card p{color:rgba(255,255,255,.86);max-width:42ch}
+.names{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.4rem;padding:0;list-style:none}
+.names li{font-family:var(--serif);font-size:1.35rem;color:var(--deep);background:var(--lamp);border-radius:999px;padding:.15rem 1rem}
+.amen{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1.5rem;font-size:.95rem;color:rgba(255,255,255,.88)}
+.amen li{display:flex;gap:.6rem;align-items:center}
+.amen svg{width:18px;height:18px;flex:none;stroke:var(--lamp);fill:none;stroke-width:1.8}
+.card .btn{align-self:flex-start}
+
+/* ---------- Day at Riva (pinned horizontal) ---------- */
+.day{position:relative;background:#E3EAE3;color:var(--ink);overflow:hidden}
+.day-pin{height:100svh;display:flex;flex-direction:column;justify-content:center;gap:2.5rem;padding:calc(84px + env(safe-area-inset-top,0px)) 0 2rem}
+.day-head{display:flex;justify-content:space-between;align-items:end;gap:2rem}
+.day-head p{margin:.8rem 0 0;max-width:36ch;color:inherit;opacity:.78}
+.clock{text-align:right;font-family:var(--serif);font-size:clamp(2.6rem,5.6vw,5.4rem);line-height:1;font-variant-numeric:tabular-nums}
+.clock small{display:block;font-family:var(--sans);font-size:.9rem;font-weight:600;opacity:.7;margin-top:.4rem}
+.day-track{display:flex;gap:clamp(1.2rem,2.4vw,2.2rem);padding-inline:max(1.25rem,(100% - 1320px)/2);will-change:transform}
+.moment{flex:0 0 clamp(270px,26vw,380px);margin:0}
+.moment .ph{overflow:hidden;border-radius:999px 999px 20px 20px;aspect-ratio:3/4;max-height:52vh;width:100%}
+.moment img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.moment:hover img{transform:scale(1.06)}
+.moment time{display:block;font-family:var(--serif);font-size:1.9rem;margin:1rem 0 .2rem}
+.moment figcaption{font-size:.98rem;opacity:.85;max-width:30ch}
+.moment strong{display:block;font-weight:700;font-size:1.05rem;opacity:1}
+.sun-line{position:relative;height:2px;background:currentColor;opacity:.25;margin-inline:max(1.25rem,(100% - 1320px)/2)}
+.sun{position:absolute;left:0;top:50%;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:var(--lamp);box-shadow:0 0 0 6px rgba(224,177,92,.25),0 0 30px 6px rgba(224,177,92,.6);opacity:1}
+.sun-wrap{position:relative;margin-inline:max(1.25rem,(100% - 1320px)/2)}
+.sun-wrap .sun-line{margin:0}
+
+/* ---------- Facilities bento ---------- */
+.facilities{padding:clamp(6rem,11vw,9rem) 0;background:var(--white)}
+.fac-head{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:end;margin-bottom:3rem}
+.fac-head p{color:var(--ink-2);margin:0;justify-self:end;max-width:38ch}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(210px,auto);gap:1rem}
+.tile{position:relative;border-radius:24px;overflow:hidden;background:var(--mist);padding:1.6rem;display:flex;flex-direction:column;justify-content:flex-end;min-height:210px;transition:transform .7s var(--ease)}
+.tile:hover{transform:translateY(-6px)}
+.tile b{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,2.2vw,2.1rem);line-height:1.05;display:block}
+.tile span{font-size:.95rem;color:var(--ink-2);display:block;margin-top:.35rem}
+.tile svg.ic{position:absolute;top:1.5rem;left:1.6rem;width:40px;height:40px;stroke:var(--forest);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.tile.photo{color:#fff}
+.tile.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:transform 1.4s var(--ease)}
+.tile.photo:hover img{transform:scale(1.07)}
+.tile.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(6,18,12,.8));z-index:1}
+.tile.photo > div{position:relative;z-index:2}
+.tile.photo span{color:rgba(255,255,255,.88)}
+.tile.dark{background:var(--forest);color:#fff}
+.tile.dark span{color:rgba(255,255,255,.78)}
+.tile.dark svg.ic{stroke:var(--lamp)}
+.tile.lamp{background:var(--lamp)}
+.tile.lamp svg.ic{stroke:var(--deep)}
+.t-pool{grid-column:span 2;grid-row:span 2}
+.t-fire{grid-column:span 1;grid-row:span 2}
+.t-bbq{grid-column:span 1;grid-row:span 2}
+.t-wide{grid-column:span 2}
+
+/* ---------- Around ---------- */
+.around{position:relative;background:var(--deep);color:#fff;padding:clamp(6rem,11vw,9rem) 0;overflow:hidden}
+.around-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(3rem,7vw,7rem);align-items:center}
+.around-photo{position:relative;border-radius:999px 999px 24px 24px;overflow:hidden;aspect-ratio:4/5}
+.around-photo img{width:100%;height:120%;object-fit:cover}
+.around-photo .tag{position:absolute;left:50%;bottom:1.6rem;transform:translateX(-50%);background:rgba(255,255,255,.16);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:.6rem 1.2rem;font-weight:600;font-size:.95rem;white-space:nowrap}
+.around h2{margin-bottom:1.4rem}
+.around p{color:rgba(255,255,255,.82)}
+.dist{list-style:none;padding:0;margin:2.4rem 0 0}
+.dist li{display:flex;align-items:baseline;gap:1rem;padding:.85rem 0;font-size:1.02rem;cursor:default}
+.dist .lead{flex:1;height:1px;background:rgba(255,255,255,.22);transform-origin:left;transform:translateY(-.3em)}
+.dist .km{font-family:var(--serif);font-size:1.6rem;color:var(--lamp);white-space:nowrap;transition:transform .5s var(--ease)}
+.dist .place{transition:transform .5s var(--ease)}
+.dist li:hover .place{transform:translateX(10px)}
+.dist li:hover .km{transform:scale(1.15)}
+
+/* ---------- Gallery (parallax columns) ---------- */
+.gallery{padding:clamp(6rem,11vw,9rem) 0;background:var(--white);overflow:hidden}
+.gallery-head{display:flex;justify-content:space-between;align-items:end;gap:1.5rem;flex-wrap:wrap;margin-bottom:3.5rem}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;align-items:start}
+.col{display:flex;flex-direction:column;gap:1.2rem}
+.col:nth-child(2){margin-top:6rem}
+.shot{border-radius:20px;overflow:hidden;border:0;padding:0;background:var(--mist);cursor:pointer;display:block;width:100%}
+.shot img{width:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.shot:hover img{transform:scale(1.06)}
+.shot.tall img{aspect-ratio:3/4}.shot.wide img{aspect-ratio:4/3}.shot.sq img{aspect-ratio:1}
+dialog.lightbox{border:0;padding:0;background:transparent;max-width:min(1200px,94vw);max-height:92vh}
+dialog.lightbox::backdrop{background:rgba(6,18,12,.92);backdrop-filter:blur(6px)}
+dialog.lightbox img{max-height:86vh;width:auto;border-radius:12px}
+dialog.lightbox .x{position:fixed;top:calc(1rem + env(safe-area-inset-top,0px));right:1rem;background:#fff;border:0;border-radius:999px;padding:.7rem 1.2rem;font-weight:600;cursor:pointer}
+
+/* ---------- Book CTA ---------- */
+.book{position:relative;color:#fff;overflow:hidden;isolation:isolate;padding:clamp(7rem,13vw,11rem) 0}
+.book-bg{position:absolute;inset:-15% 0;z-index:-2}
+.book-bg img{width:100%;height:100%;object-fit:cover}
+.book::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(6,18,12,.92) 0%,rgba(6,18,12,.7) 50%,rgba(6,18,12,.45) 100%)}
+.book-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(3rem,6vw,6rem);align-items:center}
+.book h2{font-size:clamp(3rem,7vw,7rem);margin-bottom:1.6rem}
+.book p{color:rgba(255,255,255,.88);font-size:1.1rem}
+.phone{display:inline-block;font-family:var(--serif);font-size:clamp(2.2rem,4.4vw,3.6rem);color:var(--lamp);text-decoration:none;margin:1.2rem 0 1.4rem;line-height:1}
+.addr{font-size:.98rem;color:rgba(255,255,255,.78)}
+.form{background:rgba(251,252,250,.97);color:var(--ink);border-radius:28px;padding:clamp(1.6rem,3.5vw,2.8rem);display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.1rem;box-shadow:0 40px 80px rgba(0,0,0,.35)}
+.form h3{grid-column:1/-1;font-size:2.4rem;margin-bottom:.3rem}
+.full{grid-column:1/-1}
+.field label{display:block;font-size:.85rem;font-weight:700;margin-bottom:.4rem;color:var(--ink-2)}
+.field input,.field select,.field textarea{width:100%;font:500 1rem var(--sans);color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:.85rem 1rem;min-height:52px;transition:border-color .3s}
+.field textarea{min-height:92px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--forest)}
+.form-error{grid-column:1/-1;color:#A1301F;font-size:.92rem;font-weight:600;margin:0;min-height:1.2em}
+.form .btn{grid-column:1/-1;padding:1.15rem}
+.form-note{grid-column:1/-1;font-size:.88rem;color:var(--ink-2);margin:0;text-align:center}
+
+/* ---------- Map + footer ---------- */
+.map{height:clamp(300px,40vw,440px);border:0;width:100%;display:block;filter:grayscale(.5) contrast(1.05)}
+footer{background:var(--deep);color:rgba(255,255,255,.82);padding:5rem 0 calc(1.5rem + env(safe-area-inset-bottom,0px));overflow:hidden}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2rem}
+.foot h4{font-size:.95rem;font-weight:700;color:#fff;margin:0 0 1rem}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li{padding:.3rem 0}
+.foot a{text-decoration:none;transition:color .3s}
+.foot a:hover{color:var(--lamp)}
+.foot .lead{font-family:var(--serif);font-size:clamp(1.8rem,2.6vw,2.4rem);color:#fff;line-height:1.1;max-width:14ch;margin:0}
+.giant{font-family:var(--serif);font-size:clamp(7rem,30vw,30rem);line-height:.78;letter-spacing:.06em;color:var(--forest);text-align:center;margin:4rem 0 2rem;white-space:nowrap;display:flex;justify-content:center;overflow:hidden;padding-top:.06em}
+.giant span{display:inline-block}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.88rem;color:rgba(255,255,255,.62);border-top:1px solid rgba(255,255,255,.12);padding-top:1.5rem}
+
+.wa-float{position:fixed;right:1.2rem;bottom:calc(1.2rem + env(safe-area-inset-bottom,0px));z-index:50;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.3);transition:transform .5s var(--ease)}
+.wa-float.away{transform:scale(0);pointer-events:none}
+.wa-float:hover{transform:scale(1.1) rotate(-8deg)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+/* ---------- Custom cursor ---------- */
+.cursor{position:fixed;left:0;top:0;z-index:95;pointer-events:none;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--lamp);display:none;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:var(--deep);transition:width .4s var(--ease),height .4s var(--ease),margin .4s var(--ease),background .4s}
+.cursor span{opacity:0;transition:opacity .3s}
+.cursor{opacity:0}.cursor.on{opacity:1}
+.cursor.big{width:86px;height:86px;margin:-43px 0 0 -43px;background:rgba(224,177,92,.92)}
+.cursor.big span{opacity:1}
+@media (hover:hover) and (pointer:fine){.has-cursor .cursor{display:flex}}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1080px){
+  .booking-bar{grid-template-columns:1fr 1fr;border-radius:20px}
+  .booking-bar .btn{grid-column:1/-1;padding:1rem}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .t-pool{grid-column:span 2;grid-row:span 2}.t-fire,.t-bbq{grid-row:span 1;min-height:260px}.t-wide{grid-column:span 1}
+}
+@media (max-width:900px){
+  .nav,.head-cta .btn-forest{display:none}
+  .menu-btn{display:block}
+  .hero-copy{grid-template-columns:1fr}
+  .scroll-cue{display:none}
+  .card{grid-template-columns:1fr;height:auto;min-height:0;position:relative;top:auto}
+  .card-media{min-height:280px;aspect-ratio:16/11}
+  .intro-meta{grid-template-columns:1fr 1fr}
+  .intro-grid{grid-template-columns:1fr}
+  .intro-visual{max-width:520px;width:92%}
+  .intro-visual{margin:3rem 0 0 auto}
+  .intro-visual .float{left:-6%}
+  .intro-visual .badge{right:.4rem;width:96px;height:96px}
+  .fac-head,.around-grid,.book-grid{grid-template-columns:1fr}
+  .fac-head p{justify-self:start}
+  .foot{grid-template-columns:1fr 1fr}
+  .day-pin{height:auto;padding:5.5rem 0 4rem}
+  .day-track{overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:1.25rem;scrollbar-width:none;padding-bottom:1rem}
+  .day-track::-webkit-scrollbar{display:none}
+  .moment{scroll-snap-align:start}
+  .moment .ph{max-height:none}
+  .sun-wrap,.clock{display:none}
+  .day{background:linear-gradient(180deg,#E3EAE3,#F1E6CC)}
+  .js .grow-frame{clip-path:inset(6% 8% 6% 8% round 200px 200px 20px 20px)}
+}
+@media (max-width:600px){
+  .booking-bar{grid-template-columns:1fr 1fr}
+  .bb-field{padding:.5rem .8rem}
+  .hero h1{font-size:clamp(3rem,15vw,4.2rem)}
+  .hero::after{background:linear-gradient(180deg,rgba(6,18,12,.55) 0%,rgba(6,18,12,.1) 25%,rgba(6,18,12,.55) 55%,rgba(6,18,12,.9) 100%)}
+  .amen{grid-template-columns:1fr}
+  .bento{grid-template-columns:1fr}
+  .t-pool,.t-fire,.t-bbq{grid-column:span 1;grid-row:span 1;min-height:300px}.t-wide{grid-column:span 1}
+  .cols{grid-template-columns:1fr 1fr}
+  .col:nth-child(2){margin-top:3rem}
+  .col:nth-child(3){display:none}
+  .form{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  .card-media img.inset{width:42%;inset:auto .8rem .8rem auto}
+}
+@media (prefers-reduced-motion:reduce){
+  .grain,.scroll-cue i::after{animation:none}
+  .js .split .wi{transform:none}
+  .js .intro-text .word{opacity:1}
+  .js .grow-frame{clip-path:none}
+  .js .loader{display:none}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span>View</span></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sprig" viewBox="0 0 40 40">
+    <path d="M14 36C6 30 4 18 10 6c6 10 8 21 4 30z"/>
+    <path d="M17 36c0-11 5-20 17-25-1 12-7 21-17 25z"/>
+    <path d="M18 38c6-6 14-8 22-5-6 5-14 7-22 5z"/>
+  </symbol>
+  <symbol id="wa" viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></symbol>
+</svg>
+
+<div class="loader" aria-hidden="true">
+  <div class="mark">
+    <svg class="lsprig" viewBox="0 0 40 40">
+      <path d="M14 36C6 30 4 18 10 6c6 10 8 21 4 30z"/>
+      <path d="M17 36c0-11 5-20 17-25-1 12-7 21-17 25z"/>
+      <path d="M18 38c6-6 14-8 22-5-6 5-14 7-22 5z"/>
+    </svg>
+    <div class="letters"><span>R</span><span>I</span><span>V</span><span>A</span></div>
+    <small>RESORTS</small>
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Riva Resorts, home">
+      <span class="word">R<span class="i">I<svg class="sprig" aria-hidden="true"><use href="#sprig"/></svg></span>VA</span>
+      <small>RESORTS</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#stays"><span>Stays</span><span aria-hidden="true">Stays</span></a>
+      <a href="#day"><span>A day here</span><span aria-hidden="true">A day here</span></a>
+      <a href="#facilities"><span>Facilities</span><span aria-hidden="true">Facilities</span></a>
+      <a href="#around"><span>Around Riva</span><span aria-hidden="true">Around Riva</span></a>
+      <a href="#gallery"><span>Gallery</span><span aria-hidden="true">Gallery</span></a>
+    </nav>
+    <div class="head-cta">
+      <a class="btn btn-forest magnetic" href="#book">Book your stay</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+  <a href="#stays">Stays</a>
+  <a href="#day">A day here</a>
+  <a href="#facilities">Facilities</a>
+  <a href="#around">Around Riva</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#book">Book your stay</a>
+  <div class="mm-foot"><a href="tel:+919048322999" style="font-family:var(--sans);font-size:1.1rem">+91 90483 22999</a></div>
+</nav>
+
+<main id="top">
+  <section class="hero" aria-label="Welcome">
+    <div class="hero-media"><img src="assets/images/hero-pool-dusk.jpg" alt="The Riva swimming pool at dusk, glowing blue against the forested hills of Wayanad" fetchpriority="high"></div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1 class="split hero-title">Wake up where Wayanad <em>slows down</em></h1>
+        <p class="hero-sub fade-up">A boutique retreat of nine rooms and private cottages, one kilometre from Pookode Lake in Vythiri.</p>
+      </div>
+      <form class="booking-bar fade-up" id="quick-book" novalidate aria-label="Check availability">
+        <div class="bb-field"><label for="q-in">Check-in</label><input id="q-in" type="date" required></div>
+        <div class="bb-field"><label for="q-out">Check-out</label><input id="q-out" type="date" required></div>
+        <div class="bb-field"><label for="q-guests">Guests</label>
+          <select id="q-guests"><option>1 adult</option><option selected>2 adults</option><option>2 adults, 1 child</option><option>2 adults, 2 children</option><option>3 adults</option><option>4 adults</option><option>5 or more</option></select></div>
+        <div class="bb-field"><label for="q-room">Stay</label>
+          <select id="q-room"><option>Any room</option><option>Single Bedroom Cottage</option><option>Two Bedroom Cottage</option><option>Deluxe Room</option><option>Standard Room</option></select></div>
+        <button class="btn btn-lamp" type="submit">Check availability</button>
+        <p class="bb-err" id="q-err" role="alert"></p>
+      </form>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">Scroll to explore <i></i></div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span>Swimming pool</span><svg><use href="#sprig"/></svg>
+        <span>Campfire nights</span><svg><use href="#sprig"/></svg>
+        <span>Evening barbecue</span><svg><use href="#sprig"/></svg>
+        <span>Breakfast included</span><svg><use href="#sprig"/></svg>
+        <span>1 km from Pookode Lake</span><svg><use href="#sprig"/></svg>
+        <span>Private cottages</span><svg><use href="#sprig"/></svg>
+      </div>
+      <div class="marquee-group">
+        <span>Swimming pool</span><svg><use href="#sprig"/></svg>
+        <span>Campfire nights</span><svg><use href="#sprig"/></svg>
+        <span>Evening barbecue</span><svg><use href="#sprig"/></svg>
+        <span>Breakfast included</span><svg><use href="#sprig"/></svg>
+        <span>1 km from Pookode Lake</span><svg><use href="#sprig"/></svg>
+        <span>Private cottages</span><svg><use href="#sprig"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <section class="intro" aria-labelledby="intro-label">
+    <div class="wrap">
+      <div class="intro-grid">
+        <div>
+          <p class="kicker" id="intro-label"><svg aria-hidden="true"><use href="#sprig"/></svg>Welcome to Riva</p>
+          <p class="intro-text">Tucked into the green hills of Vythiri, Riva is a small, quiet place to slow down. Misty mornings, a pool framed by forest, and evenings that end beside the fire.</p>
+        </div>
+        <div class="intro-visual">
+          <div class="main"><img src="assets/images/riva-house.jpg" alt="Riva Resorts at dusk, the main building lit up among gardens and trees" loading="lazy"></div>
+          <div class="float"><img src="assets/images/pool-hills.jpg" alt="The pool looking out over forested hills" loading="lazy"></div>
+          <div class="badge"><span><svg viewBox="0 0 40 40" style="width:30px;height:30px;fill:var(--deep);display:block;margin:0 auto .3rem"><use href="#sprig"/></svg>Vythiri,<br>Wayanad</span></div>
+        </div>
+      </div>
+      <div class="intro-meta">
+        <div><b>9</b>rooms in all</div>
+        <div><b>4</b>private cottages</div>
+        <div><b>1 km</b>to Pookode Lake</div>
+        <div><b>Free</b>breakfast and Wi‑Fi</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grow" aria-label="The resort at dusk">
+    <div class="grow-frame"><img src="assets/images/pool-arch.jpg" alt="Lantern-lit garden at Riva with a white arch framing the pool" loading="lazy"></div>
+  </section>
+
+  <section class="stays" id="stays" aria-labelledby="stays-title">
+    <div class="wrap">
+      <div class="stays-head">
+        <div>
+          <p class="kicker"><svg aria-hidden="true"><use href="#sprig"/></svg>Rooms and cottages</p>
+          <h2 id="stays-title" class="split">Find your corner of Riva</h2>
+        </div>
+        <p>Four ways to stay, from a cottage of your own beside the pool to a cosy room for a quick escape.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-media">
+            <img class="main" src="assets/images/cottage-pool.jpg" alt="Single bedroom cottage beside the pool at dusk" loading="lazy">
+            <img class="inset" src="assets/images/single-bedroom.jpg" alt="Inside a single bedroom cottage" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><span>Best for couples</span><span class="pill">3 cottages</span></div>
+            <div>
+              <h3>Single Bedroom Cottage</h3>
+              <ul class="names" aria-label="Cottage names"><li>Mayura</li><li>Nihara</li><li>Vihara</li></ul>
+              <p>Each cottage stands on its own under the trees, a few steps from the pool, with a sitting area and private bath.</p>
+            </div>
+            <ul class="amen">
+              <li><svg><use href="#check"/></svg>Air conditioned</li><li><svg><use href="#check"/></svg>Sitting area</li>
+              <li><svg><use href="#check"/></svg>Flat-screen TV</li><li><svg><use href="#check"/></svg>Steps from the pool</li>
+            </ul>
+            <a class="btn btn-lamp" href="#book" data-room="Single Bedroom Cottage">Enquire about this cottage</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img class="main" src="assets/images/twobed-bedroom.jpg" alt="Bedroom in the two bedroom cottage" loading="lazy">
+            <img class="inset" src="assets/images/twobed-lounge.jpg" alt="Shared lounge in the two bedroom cottage" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><span>Best for families and groups</span><span class="pill">1 cottage</span></div>
+            <div>
+              <h3>Two Bedroom Cottage</h3>
+              <p>Two bedrooms around a shared lounge, so everyone can be together without being on top of each other.</p>
+            </div>
+            <ul class="amen">
+              <li><svg><use href="#check"/></svg>2 bedrooms</li><li><svg><use href="#check"/></svg>Shared lounge</li>
+              <li><svg><use href="#check"/></svg>Tea and coffee station</li><li><svg><use href="#check"/></svg>Private bathroom</li>
+            </ul>
+            <a class="btn btn-lamp" href="#book" data-room="Two Bedroom Cottage">Enquire about this cottage</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img class="main" src="assets/images/deluxe-room.jpg" alt="Deluxe room with wood-panelled wall" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><span>Best for a relaxed stay</span><span class="pill">2 rooms</span></div>
+            <div>
+              <h3>Deluxe Room</h3>
+              <p>Warm wood, soft light and views over the gardens, with a little more space to settle in.</p>
+            </div>
+            <ul class="amen">
+              <li><svg><use href="#check"/></svg>Garden views</li><li><svg><use href="#check"/></svg>Flat-screen TV</li>
+              <li><svg><use href="#check"/></svg>Private bathroom</li><li><svg><use href="#check"/></svg>Free Wi‑Fi</li>
+            </ul>
+            <a class="btn btn-lamp" href="#book" data-room="Deluxe Room">Enquire about this room</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img class="main" src="assets/images/standard-room.jpg" alt="Standard room with double bed" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><span>Best for a short break</span><span class="pill">2 rooms</span></div>
+            <div>
+              <h3>Standard Room</h3>
+              <p>Clean, cosy and thoughtfully kept, with the pool, fire pit and gardens all yours to enjoy.</p>
+            </div>
+            <ul class="amen">
+              <li><svg><use href="#check"/></svg>Double bed</li><li><svg><use href="#check"/></svg>Flat-screen TV</li>
+              <li><svg><use href="#check"/></svg>Private bathroom</li><li><svg><use href="#check"/></svg>Free Wi‑Fi</li>
+            </ul>
+            <a class="btn btn-lamp" href="#book" data-room="Standard Room">Enquire about this room</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="day" id="day" aria-labelledby="day-title">
+    <div class="day-pin">
+      <div class="wrap day-head">
+        <div>
+          <h2 id="day-title" class="split">A day at Riva</h2>
+          <p>From the first mist on the hills to the last log on the fire.</p>
+        </div>
+        <div class="clock" aria-hidden="true"><span id="clock">6:30 am</span><small id="clock-label">Morning mist</small></div>
+      </div>
+      <div class="day-track">
+        <figure class="moment" data-time="6:30 am" data-label="Morning mist">
+          <div class="ph"><img src="assets/images/morning-view.jpg" alt="Green hills seen from a verandah"></div>
+          <time>6:30 am</time><figcaption><strong>Mist on the hills</strong>Tea on the verandah while the valley wakes up.</figcaption>
+        </figure>
+        <figure class="moment" data-time="8:30 am" data-label="Breakfast">
+          <div class="ph"><img src="assets/images/pool-hills.jpg" alt="Pool with forest views in daylight"></div>
+          <time>8:30 am</time><figcaption><strong>Breakfast, on us</strong>A complimentary breakfast with the forest for company.</figcaption>
+        </figure>
+        <figure class="moment" data-time="11:00 am" data-label="Pool time">
+          <div class="ph"><img src="assets/images/pool-slide.jpg" alt="Pool with a red children's slide"></div>
+          <time>11:00 am</time><figcaption><strong>Into the pool</strong>Long swims for you, the slide for the kids.</figcaption>
+        </figure>
+        <figure class="moment" data-time="1:00 pm" data-label="Out exploring">
+          <div class="ph"><img src="assets/images/pookode.jpg" alt="Forest edge reflected in Pookode Lake"></div>
+          <time>1:00 pm</time><figcaption><strong>Row on Pookode Lake</strong>Just 1 km away, ringed by forested hills.</figcaption>
+        </figure>
+        <figure class="moment" data-time="4:00 pm" data-label="Golden hour">
+          <div class="ph"><img src="assets/images/swing.jpg" alt="Garden swing among areca palms"></div>
+          <time>4:00 pm</time><figcaption><strong>Swing and play</strong>Garden swings, the play area and indoor games.</figcaption>
+        </figure>
+        <figure class="moment" data-time="7:30 pm" data-label="Dinner">
+          <div class="ph"><img src="assets/images/dining.jpg" alt="Open-air dining area surrounded by plants"></div>
+          <time>7:30 pm</time><figcaption><strong>Barbecue under the eaves</strong>Dinner off the grill in the open-air dining space.</figcaption>
+        </figure>
+        <figure class="moment" data-time="9:00 pm" data-label="Campfire">
+          <div class="ph"><img src="assets/images/campfire.jpg" alt="Campfire in a round brick fire pit at night"></div>
+          <time>9:00 pm</time><figcaption><strong>Campfire nights</strong>Stories, stars and the crackle of the bonfire.</figcaption>
+        </figure>
+      </div>
+      <div class="sun-wrap" aria-hidden="true"><div class="sun-line"></div><div class="sun"></div></div>
+    </div>
+  </section>
+
+  <section class="facilities" id="facilities" aria-labelledby="fac-title">
+    <div class="wrap">
+      <div class="fac-head">
+        <div>
+          <p class="kicker"><svg aria-hidden="true"><use href="#sprig"/></svg>Facilities</p>
+          <h2 id="fac-title" class="split">Everything within the gates</h2>
+        </div>
+        <p>The pool, the fire, the grill and breakfast every morning, all a short walk from your door.</p>
+      </div>
+      <div class="bento">
+        <div class="tile photo t-pool reveal"><img src="assets/images/hero-pool-dusk.jpg" alt="" loading="lazy"><div><b>Swimming pool</b><span>Lit up at night, with a children's slide</span></div></div>
+        <div class="tile photo t-fire reveal"><img src="assets/images/campfire.jpg" alt="" loading="lazy"><div><b>Bonfire</b><span>Evenings around the fire pit</span></div></div>
+        <div class="tile photo t-bbq reveal"><img src="assets/images/dining.jpg" alt="" loading="lazy"><div><b>Barbecue grill</b><span>Dinner off the grill</span></div></div>
+        <div class="tile lamp t-wide reveal"><svg class="ic" viewBox="0 0 32 32"><path d="M5 12h18v7a7 7 0 0 1-7 7h-4a7 7 0 0 1-7-7zM23 14h2a3 3 0 0 1 0 6h-2.5M11 4c-1 2 1 3 0 5M16 4c-1 2 1 3 0 5"/></svg><b>Complimentary breakfast</b><span style="color:var(--deep)">Included with every stay</span></div>
+        <div class="tile reveal"><svg class="ic" viewBox="0 0 32 32"><path d="M4 28V8h8M12 8l10 20M22 8v20M18 8h10M8 8V4M28 8V4"/></svg><b>Play area and games</b><span>Swings, slide and indoor games</span></div>
+        <div class="tile reveal"><svg class="ic" viewBox="0 0 32 32"><path d="M4 12h24M6 12v14M26 12v14M3 26h26M16 4l12 8H4zM12 18h8v8h-8z"/></svg><b>Private dining and events</b><span>For celebrations and small groups</span></div>
+        <div class="tile t-wide reveal"><svg class="ic" viewBox="0 0 32 32"><path d="M4 12a17 17 0 0 1 24 0M8 16.5a11 11 0 0 1 16 0M12 21a5 5 0 0 1 8 0"/><circle cx="16" cy="25" r="1.5"/></svg><b>Free Wi‑Fi</b><span>Across the property</span></div>
+        <div class="tile dark t-wide reveal"><svg class="ic" viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="24" rx="5"/><path d="M12 23V9h5.5a4.5 4.5 0 0 1 0 9H12"/></svg><b>Secure parking</b><span>Spacious, gated and free</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="around" id="around" aria-labelledby="around-title">
+    <div class="wrap around-grid">
+      <div class="around-photo"><img src="assets/images/pookode.jpg" alt="Pookode Lake with forest reflected in the water" loading="lazy"><span class="tag">Pookode Lake, 1 km away</span></div>
+      <div>
+        <p class="kicker" style="color:var(--lamp)"><svg aria-hidden="true"><use href="#sprig"/></svg>Around Riva</p>
+        <h2 id="around-title" class="split">Wayanad, right on the doorstep</h2>
+        <p>Riva sits on Pookode Lake Road in Vythiri, the gateway to Wayanad's lakes, waterfalls and viewpoints.</p>
+        <ul class="dist">
+          <li><span class="place">Pookode Lake</span><span class="lead"></span><span class="km">1 km</span></li>
+          <li><span class="place">Lakkidi Viewpoint</span><span class="lead"></span><span class="km">5.4 km</span></li>
+          <li><span class="place">Karlad Lake</span><span class="lead"></span><span class="km">19 km</span></li>
+          <li><span class="place">Thusharagiri Falls</span><span class="lead"></span><span class="km">20 km</span></li>
+          <li><span class="place">Banasura Sagar Dam</span><span class="lead"></span><span class="km">24 km</span></li>
+          <li><span class="place">Meenmutty Falls</span><span class="lead"></span><span class="km">26 km</span></li>
+          <li><span class="place">Calicut International Airport</span><span class="lead"></span><span class="km">63 km</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="gallery-head">
+        <h2 id="gallery-title" class="split">Take a look around</h2>
+        <a class="btn btn-dark-line magnetic" href="https://www.instagram.com/rivaresorts" target="_blank" rel="noopener">Follow @rivaresorts</a>
+      </div>
+      <div class="cols">
+        <div class="col" data-speed="-6">
+          <button class="shot tall" type="button"><img src="assets/images/stairs.jpg" alt="Red staircase climbing through the trees" loading="lazy"></button>
+          <button class="shot wide" type="button"><img src="assets/images/games.jpg" alt="Indoor games room" loading="lazy"></button>
+        </div>
+        <div class="col" data-speed="8">
+          <button class="shot wide" type="button"><img src="assets/images/riva-house.jpg" alt="Main Riva building in the evening" loading="lazy"></button>
+          <button class="shot tall" type="button"><img src="assets/images/campfire.jpg" alt="Campfire at night" loading="lazy"></button>
+        </div>
+        <div class="col" data-speed="-10">
+          <button class="shot sq" type="button"><img src="assets/images/single-cottage.jpg" alt="Whitewashed cottage with log seating" loading="lazy"></button>
+          <button class="shot wide" type="button"><img src="assets/images/cottage-pool.jpg" alt="Cottage and pool at dusk" loading="lazy"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book" aria-labelledby="book-title">
+    <div class="book-bg"><img src="assets/images/campfire.jpg" alt="" loading="lazy"></div>
+    <div class="wrap book-grid">
+      <div>
+        <h2 id="book-title" class="split">Your waterside escape awaits</h2>
+        <p>Book directly with us for the best rates and a stay planned around you.</p>
+        <a class="phone" href="tel:+919048322999">+91 90483 22999</a>
+        <p class="addr">Pookode Lake Road, Vythiri, Wayanad, Kerala 673 576</p>
+      </div>
+      <form class="form" id="enquiry" novalidate>
+        <h3>Plan your stay</h3>
+        <div class="field full"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name"></div>
+        <div class="field"><label for="f-in">Check-in</label><input id="f-in" name="checkin" type="date"></div>
+        <div class="field"><label for="f-out">Check-out</label><input id="f-out" name="checkout" type="date"></div>
+        <div class="field"><label for="f-room">Room type</label>
+          <select id="f-room" name="room"><option>Any room</option><option>Single Bedroom Cottage</option><option>Two Bedroom Cottage</option><option>Deluxe Room</option><option>Standard Room</option></select></div>
+        <div class="field"><label for="f-guests">Guests</label>
+          <select id="f-guests" name="guests"><option>1 adult</option><option selected>2 adults</option><option>2 adults, 1 child</option><option>2 adults, 2 children</option><option>3 adults</option><option>4 adults</option><option>5 or more</option></select></div>
+        <div class="field full"><label for="f-note">Anything we should know? (optional)</label><textarea id="f-note" name="note" placeholder="Celebrating something, arriving late, want a barbecue dinner…"></textarea></div>
+        <p class="form-error" id="form-error" role="alert"></p>
+        <button class="btn btn-forest" type="submit"><svg aria-hidden="true"><use href="#wa"/></svg>Send enquiry on WhatsApp</button>
+        <p class="form-note">Opens WhatsApp with your details filled in, ready to send.</p>
+      </form>
+    </div>
+  </section>
+
+  <iframe class="map" title="Map showing Riva Resorts on Pookode Lake Road, Vythiri" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Riva+Resorts,+Pookode+Lake+Road,+Vythiri,+Wayanad&output=embed"></iframe>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <p class="lead">A peaceful boutique retreat near Pookode Lake.</p>
+      <div><h4>Stay</h4><ul><li><a href="#stays">Rooms and cottages</a></li><li><a href="#facilities">Facilities</a></li><li><a href="#book">Book your stay</a></li></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="#day">A day at Riva</a></li><li><a href="#around">Around Riva</a></li><li><a href="#gallery">Gallery</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+919048322999">+91 90483 22999</a></li><li><a href="https://wa.me/919048322999" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="https://www.instagram.com/rivaresorts" target="_blank" rel="noopener">Instagram</a></li></ul></div>
+    </div>
+    <div class="giant" aria-hidden="true"><span>R</span><span>I</span><span>V</span><span>A</span></div>
+    <div class="legal"><span>© <span id="yr">2026</span> Riva Resorts, Vythiri, Wayanad</span><span>Pookode Lake Road, Vythiri, Wayanad 673 576</span></div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919048322999?text=Hi%20Riva%20Resorts%2C%20I%27d%20like%20to%20check%20availability." target="_blank" rel="noopener" aria-label="Message Riva Resorts on WhatsApp"><svg aria-hidden="true"><use href="#wa"/></svg></a>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo viewer"><button type="button" class="x" id="lb-close">Close</button><img id="lb-img" alt=""></dialog>
+
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/scrolltrigger.min.js"></script>
+<script src="assets/js/lenis.min.js"></script>
+<script>
+(function(){
+  var root=document.documentElement;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasGsap=typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined';
+  var WA='919048322999';
+
+  /* ---------- helpers ---------- */
+  function splitWords(el){
+    var html=el.innerHTML;
+    var out=html.replace(/<em>(.*?)<\/em>/g,function(m,inner){return inner.split(/\s+/).map(function(w){return '\u0000'+w+'\u0001'}).join(' ')});
+    var tokens=out.split(/\s+/);
+    el.innerHTML=tokens.map(function(t){
+      var em=t.indexOf('\u0000')===0;
+      t=t.replace(/[\u0000\u0001]/g,'');
+      return '<span class="w"><span class="wi">'+(em?'<em>'+t+'</em>':t)+'</span></span>';
+    }).join(' ');
+  }
+  function fmt(v){return new Date(v+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}
+  function openWA(lines){window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener')}
+
+  document.querySelectorAll('.split').forEach(splitWords);
+  var intro=document.querySelector('.intro-text');
+  intro.innerHTML=intro.textContent.trim().split(/\s+/).map(function(w){return '<span class="word">'+w+'</span>'}).join(' ');
+
+  /* ---------- dates ---------- */
+  var d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());var today=d.toISOString().slice(0,10);
+  [['q-in','q-out'],['f-in','f-out']].forEach(function(p){
+    var a=document.getElementById(p[0]),b=document.getElementById(p[1]);
+    a.min=today;b.min=today;
+    a.addEventListener('change',function(){b.min=a.value||today;if(b.value&&b.value<=a.value)b.value=''});
+  });
+
+  /* ---------- quick booking bar ---------- */
+  document.getElementById('quick-book').addEventListener('submit',function(e){
+    e.preventDefault();
+    var a=document.getElementById('q-in').value,b=document.getElementById('q-out').value,err=document.getElementById('q-err');
+    err.classList.remove('on');
+    if(!a||!b){err.textContent='Pick your check-in and check-out dates.';err.classList.add('on');return}
+    if(b<=a){err.textContent='Check-out needs to be after check-in.';err.classList.add('on');return}
+    openWA(["Hi Riva Resorts, I'd like to check availability.",'','Check-in: '+fmt(a),'Check-out: '+fmt(b),'Guests: '+document.getElementById('q-guests').value,'Stay: '+document.getElementById('q-room').value]);
+  });
+
+  /* ---------- full enquiry form ---------- */
+  var form=document.getElementById('enquiry'),ferr=document.getElementById('form-error');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();ferr.textContent='';
+    var n=form.name.value.trim(),a=form.checkin.value,b=form.checkout.value;
+    if(!n){ferr.textContent='Add your name so we know who to reply to.';form.name.focus();return}
+    if(!a||!b){ferr.textContent='Choose both a check-in and a check-out date.';(a?form.checkout:form.checkin).focus();return}
+    if(b<=a){ferr.textContent='Check-out needs to be after check-in.';form.checkout.focus();return}
+    var lines=["Hi Riva Resorts, I'd like to check availability.",'','Name: '+n,'Check-in: '+fmt(a),'Check-out: '+fmt(b),'Room: '+form.room.value,'Guests: '+form.guests.value];
+    if(form.note.value.trim())lines.push('Note: '+form.note.value.trim());
+    openWA(lines);
+  });
+  document.querySelectorAll('[data-room]').forEach(function(a){a.addEventListener('click',function(){document.getElementById('f-room').value=a.dataset.room})});
+
+  /* ---------- menu ---------- */
+  var menuBtn=document.querySelector('.menu-btn');
+  function setMenu(open){root.classList.toggle('menu-open',open);menuBtn.setAttribute('aria-expanded',open);menuBtn.setAttribute('aria-label',open?'Close menu':'Open menu');if(window.__lenis){open?window.__lenis.stop():window.__lenis.start()}}
+  menuBtn.addEventListener('click',function(){setMenu(!root.classList.contains('menu-open'))});
+  document.querySelectorAll('.mobile-menu a[href^="#"]').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+
+  /* ---------- header state ---------- */
+  var header=document.querySelector('.header'),lastY=0,waBtn=document.querySelector('.wa-float');
+  waBtn.classList.add('away');
+  var dirAnchor=0,hidden=false;
+  function onScroll(y){
+    header.classList.toggle('scrolled',y>60);
+    waBtn.classList.toggle('away',y<window.innerHeight*.7);
+    /* hide on scroll down, show on scroll up, with a 12px dead zone so tiny jitters never flip it */
+    if(root.classList.contains('menu-open')||y<500){if(hidden){hidden=false;header.classList.remove('hide')}dirAnchor=y;return}
+    if(!hidden&&y>dirAnchor+12){hidden=true;header.classList.add('hide');dirAnchor=y}
+    else if(hidden&&y<dirAnchor-12){hidden=false;header.classList.remove('hide');dirAnchor=y}
+    else if((hidden&&y>dirAnchor)||(!hidden&&y<dirAnchor)){dirAnchor=y}
+  }
+  var nativeScroll=function(){onScroll(window.scrollY)};
+  window.addEventListener('scroll',nativeScroll,{passive:true});
+
+  /* ---------- lightbox ---------- */
+  var lb=document.getElementById('lightbox'),lbImg=document.getElementById('lb-img');
+  document.querySelectorAll('.shot').forEach(function(b){b.addEventListener('click',function(){var i=b.querySelector('img');lbImg.src=i.src;lbImg.alt=i.alt;lb.showModal&&lb.showModal()})});
+  document.getElementById('lb-close').addEventListener('click',function(){lb.close()});
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  /* ---------- no animation fallback ---------- */
+  if(!hasGsap||reduce){
+    root.classList.add('no-js-marquee');
+    document.querySelectorAll('.wi').forEach(function(w){w.style.transform='none'});
+    document.querySelectorAll('.intro-text .word').forEach(function(w){w.style.opacity=1});
+    var gf=document.querySelector('.grow-frame');if(gf)gf.style.clipPath='none';
+    var ld=document.querySelector('.loader');if(ld)ld.style.display='none';
+    return;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* ---------- smooth scroll ---------- */
+  if(typeof Lenis!=='undefined'){
+    var lenis=new Lenis({duration:1.15,smoothWheel:true});
+    window.__lenis=lenis;
+    window.removeEventListener('scroll',nativeScroll);
+    lenis.on('scroll',function(e){ScrollTrigger.update();onScroll(e.scroll)});
+    gsap.ticker.add(function(t){lenis.raf(t*1000)});
+    gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click',function(e){var id=a.getAttribute('href');var t=id==='#top'?0:document.querySelector(id);if(t!==null){e.preventDefault();lenis.scrollTo(t,{offset:id==='#top'?0:-20,duration:1.6})}});
+    });
+  }
+
+  /* ---------- preloader + hero intro ---------- */
+  gsap.set('.loader',{clipPath:'inset(0% 0% 0% 0%)'});
+  var tl=gsap.timeline({defaults:{ease:'expo.out'}});
+  if(window.__lenis)window.__lenis.stop();
+  tl.to('.loader .lsprig path',{scale:1,duration:.9,stagger:.12,ease:'back.out(2)'})
+    .to('.loader .letters span',{yPercent:-105,duration:1,stagger:.07},'-=.6')
+    .to('.loader small',{opacity:1,duration:.6},'-=.6')
+    .to('.loader',{clipPath:'inset(0% 0% 100% 0%)',duration:1.1,ease:'expo.inOut'},'+=.35')
+    .set('.loader',{display:'none'})
+    .fromTo('.hero-media img',{scale:1.3},{scale:1,duration:2.4,ease:'power3.out'},'-=.9')
+    .to('.hero-title .wi',{y:0,duration:1.3,stagger:.08},'-=2.1')
+    .from('.hero .fade-up',{y:40,opacity:0,duration:1.2,stagger:.15},'-=1.2')
+    .add(function(){if(window.__lenis)window.__lenis.start()});
+
+  /* hero parallax */
+  gsap.to('.hero-media img',{yPercent:12,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.to('.hero .wrap',{yPercent:-25,opacity:0,ease:'none',scrollTrigger:{trigger:'.hero',start:'center center',end:'bottom top',scrub:true}});
+
+  /* ---------- headings (except hero) ---------- */
+  document.querySelectorAll('.split:not(.hero-title)').forEach(function(h){
+    gsap.to(h.querySelectorAll('.wi'),{y:0,duration:1.2,stagger:.06,ease:'expo.out',scrollTrigger:{trigger:h,start:'top 85%'}});
+  });
+
+  /* ---------- marquee with scroll velocity ---------- */
+  var mq=gsap.to('.marquee-track',{xPercent:-50,duration:38,ease:'none',repeat:-1});
+  if(window.__lenis){window.__lenis.on('scroll',function(e){var v=gsap.utils.clamp(-6,6,e.velocity/6);gsap.to(mq,{timeScale:1+Math.abs(v),duration:.3,overwrite:true,onComplete:function(){gsap.to(mq,{timeScale:1,duration:1})}})})}
+
+  /* ---------- intro text scrub ---------- */
+  gsap.to('.intro-text .word',{opacity:1,stagger:.1,ease:'none',scrollTrigger:{trigger:'.intro-text',start:'top 80%',end:'bottom 45%',scrub:true}});
+  gsap.fromTo('.intro-visual .main',{clipPath:'inset(100% 0% 0% 0%)'},{clipPath:'inset(0% 0% 0% 0%)',duration:1.6,ease:'expo.inOut',scrollTrigger:{trigger:'.intro-visual',start:'top 80%'}});
+  gsap.fromTo('.intro-visual .main img',{yPercent:-14},{yPercent:0,ease:'none',scrollTrigger:{trigger:'.intro',start:'top bottom',end:'bottom top',scrub:true}});
+  gsap.from('.intro-visual .float',{y:120,opacity:0,duration:1.4,ease:'expo.out',delay:.3,scrollTrigger:{trigger:'.intro-visual',start:'top 75%'}});
+  gsap.to('.intro-visual .float',{yPercent:-18,ease:'none',scrollTrigger:{trigger:'.intro',start:'top bottom',end:'bottom top',scrub:true}});
+  gsap.from('.intro-visual .badge',{scale:0,rotate:-90,duration:1.2,ease:'back.out(1.6)',delay:.6,scrollTrigger:{trigger:'.intro-visual',start:'top 75%'}});
+  gsap.to('.intro-visual .badge',{rotate:20,ease:'none',scrollTrigger:{trigger:'.intro',start:'top bottom',end:'bottom top',scrub:true}});
+  gsap.from('.intro-meta > div',{y:30,opacity:0,duration:1,stagger:.1,ease:'expo.out',scrollTrigger:{trigger:'.intro-meta',start:'top 88%'}});
+
+  var mm=gsap.matchMedia();
+
+  /* ---------- growing image ---------- */
+  gsap.fromTo('.grow-frame',{clipPath:window.innerWidth>900?'inset(12% 22% 12% 22% round 400px 400px 24px 24px)':'inset(6% 8% 6% 8% round 200px 200px 20px 20px)'},{clipPath:'inset(0% 0% 0% 0% round 0px 0px 0px 0px)',ease:'none',scrollTrigger:{trigger:'.grow',start:'top 85%',end:'top 10%',scrub:true}});
+  gsap.fromTo('.grow-frame img',{yPercent:-12},{yPercent:0,ease:'none',scrollTrigger:{trigger:'.grow',start:'top bottom',end:'bottom top',scrub:true}});
+
+  /* ---------- stacking cards ---------- */
+  var cards=gsap.utils.toArray('.card');
+  cards.forEach(function(c,i){
+    if(i<cards.length-1){
+      gsap.fromTo(c,{scale:1,filter:'brightness(1)'},{scale:.93-(cards.length-i)*.005,filter:'brightness(.6)',ease:'none',scrollTrigger:{trigger:cards[i+1],start:'top bottom',end:'top 100px',scrub:true}});
+    }
+    gsap.from(c.querySelector('.card-media img.main'),{scale:1.25,ease:'none',scrollTrigger:{trigger:c,start:'top bottom',end:'top 100px',scrub:true}});
+  });
+
+  /* ---------- day at Riva: pinned horizontal with sky colour ---------- */
+  mm.add('(min-width: 901px)',function(){
+    var section=document.querySelector('.day'),track=document.querySelector('.day-track');
+    var moments=gsap.utils.toArray('.moment');
+    var clock=document.getElementById('clock'),clockLabel=document.getElementById('clock-label');
+    var sky=['#E3EAE3','#EAF0E4','#F2F0DE','#E9EFE9','#F1DFB4','#C9874F','#14222B'];
+    var ink=['#0F1B14','#0F1B14','#0F1B14','#0F1B14','#0F1B14','#FFFFFF','#FFFFFF'];
+    var dist=function(){return track.scrollWidth-window.innerWidth};
+    var st=gsap.timeline({scrollTrigger:{trigger:section,start:'top top',end:function(){return '+='+Math.max(dist()*3,moments.length*window.innerHeight*.8)},pin:'.day-pin',scrub:1.4,invalidateOnRefresh:true,
+      onUpdate:function(self){
+        var idx=Math.min(moments.length-1,Math.round(self.progress*(moments.length-1)));
+        if(clock.dataset.i!=String(idx)){clock.dataset.i=idx;clock.textContent=moments[idx].dataset.time;clockLabel.textContent=moments[idx].dataset.label;
+          gsap.fromTo(clock,{yPercent:30,opacity:0},{yPercent:0,opacity:1,duration:.5,ease:'expo.out'})}
+      }}});
+    st.to(track,{x:function(){return -dist()},ease:'none',duration:1},0);
+    st.to('.sun',{left:'100%',ease:'none',duration:1},0);
+    var colTl=gsap.timeline();
+    for(var k=1;k<sky.length;k++){colTl.to(section,{backgroundColor:sky[k],color:ink[k],duration:1,ease:'none'})}
+    st.add(colTl.duration(1),0);
+    return function(){gsap.set(section,{clearProps:'backgroundColor,color'})};
+  });
+
+  /* ---------- bento reveal ---------- */
+  gsap.from('.tile',{y:60,opacity:0,duration:1.1,stagger:.08,ease:'expo.out',scrollTrigger:{trigger:'.bento',start:'top 82%'}});
+
+  /* ---------- around ---------- */
+  gsap.fromTo('.around-photo img',{yPercent:-15},{yPercent:0,ease:'none',scrollTrigger:{trigger:'.around',start:'top bottom',end:'bottom top',scrub:true}});
+  gsap.fromTo('.around-photo',{clipPath:'inset(100% 0% 0% 0%)'},{clipPath:'inset(0% 0% 0% 0%)',duration:1.6,ease:'expo.inOut',scrollTrigger:{trigger:'.around-photo',start:'top 80%'}});
+  gsap.from('.dist .lead',{scaleX:0,duration:1.2,stagger:.08,ease:'expo.out',scrollTrigger:{trigger:'.dist',start:'top 82%'}});
+  gsap.from('.dist .place, .dist .km',{opacity:0,y:14,duration:.9,stagger:.04,ease:'expo.out',scrollTrigger:{trigger:'.dist',start:'top 82%'}});
+
+  /* ---------- gallery parallax columns ---------- */
+  gsap.utils.toArray('.col').forEach(function(c){
+    gsap.to(c,{yPercent:Number(c.dataset.speed),ease:'none',scrollTrigger:{trigger:'.cols',start:'top bottom',end:'bottom top',scrub:true}});
+  });
+
+  /* ---------- book ---------- */
+  gsap.fromTo('.book-bg',{yPercent:-10},{yPercent:10,ease:'none',scrollTrigger:{trigger:'.book',start:'top bottom',end:'bottom top',scrub:true}});
+  gsap.from('.form',{y:80,opacity:0,duration:1.3,ease:'expo.out',scrollTrigger:{trigger:'.form',start:'top 85%'}});
+
+  /* ---------- footer giant wordmark ---------- */
+  gsap.from('.giant span',{yPercent:100,duration:1.4,stagger:.08,ease:'expo.out',scrollTrigger:{trigger:'.giant',start:'top 92%'}});
+
+  /* ---------- cursor + magnetic (desktop only) ---------- */
+  if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
+    root.classList.add('has-cursor');
+    var cur=document.querySelector('.cursor'),cx=gsap.quickTo(cur,'x',{duration:.35,ease:'power3'}),cy=gsap.quickTo(cur,'y',{duration:.35,ease:'power3'});
+    window.addEventListener('mousemove',function(e){cur.classList.add('on');cx(e.clientX);cy(e.clientY)});
+    document.querySelectorAll('.shot,.card-media').forEach(function(el){
+      el.addEventListener('mouseenter',function(){cur.querySelector('span').textContent=el.classList.contains('shot')?'View':'Explore';cur.classList.add('big')});
+      el.addEventListener('mouseleave',function(){cur.classList.remove('big')});
+    });
+    document.querySelectorAll('.magnetic').forEach(function(b){
+      var bx=gsap.quickTo(b,'x',{duration:.5,ease:'power3'}),by=gsap.quickTo(b,'y',{duration:.5,ease:'power3'});
+      b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();bx((e.clientX-r.left-r.width/2)*.3);by((e.clientY-r.top-r.height/2)*.4)});
+      b.addEventListener('mouseleave',function(){bx(0);by(0)});
+    });
+  }
+
+  window.addEventListener('load',function(){ScrollTrigger.refresh()});
+})();
+</script>
+</body>
+</html>
